@@ -1,4 +1,4 @@
-@@ -0,0 +1,55 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
@@ -46,6 +46,9 @@ main {
 .fiches {
 	flex: 1;
 	margin: 8px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4px;
 }
 .fiches img {
 	max-width: 200px;
