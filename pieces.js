@@ -39,8 +39,11 @@ pieceElement.appendChild(disponibiliteElement);
 // Gestion des boutons
 const boutonTrier = document.querySelector(".btn-trier");
 
-boutonTrier.addEventListener("click", function () {
-    const piecesOrdonnees = Array.from(pieces);
+// Ancienne méthode pour écrire une écoute évèmement
+const piecesOrdonnees = Array.from(pieces);
+//boutonTrier.addEventListener("click", function () {
+//NEW Méthode pr corriger des bugs js
+boutonTrier.addEventListener("click", () => {
     piecesOrdonnees.sort(function (a, b) {
         return a.prix - b.prix;
      });
